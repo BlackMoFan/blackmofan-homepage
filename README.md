@@ -6,7 +6,7 @@
 
 This is the tut I watched and followed to build this website:
 
-[![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
+[![YouTube thumbnail](codedTerm.jpg)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
 
 ## Stack
 
