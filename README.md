@@ -5,7 +5,7 @@
 ## Tutorial
 
 This is the tut I watched and followed to build this website:
-
+[https://www.youtube.com/watch?v=bSMZgXzC9AA](https://www.youtube.com/watch?v=bSMZgXzC9AA)
 [![YouTube thumbnail](codedTerm.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
 
 ## Stack
