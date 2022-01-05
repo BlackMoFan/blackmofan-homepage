@@ -8,7 +8,7 @@ import {
 	Link,
 	List,
 	ListItem,
-	{/* SimpleGrid, */}
+	//SimpleGrid,
 	Icon,
 	useColorModeValue 
 } from '@chakra-ui/react'
@@ -17,7 +17,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-import { GridItem } from '../components/grid-item'
+//import { GridItem } from '../components/grid-item'
 import {
 	IoLogoGithub
 } from 'react-icons/io5'
@@ -107,9 +107,9 @@ const Page = () => {
 						</ListItem>
 					</List>
 
-					{/* <SimpleGrid columns={[1,2,2]} gap={6}>
-						<GridItem href="https://www.youtube.com/devaslife" title="Dev as Life" thumbnail={thumbYouTube}>I got this tut from this YouTube channel</GridItem>
-					</SimpleGrid> */}
+					//<SimpleGrid columns={[1,2,2]} gap={6}>
+						//<GridItem href="https://www.youtube.com/devaslife" title="Dev as Life" thumbnail={thumbYouTube}>I got this tut from this YouTube channel</GridItem>
+					//</SimpleGrid>
 				</Section>
 			</Container>
 		</Layout>
