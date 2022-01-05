@@ -21,7 +21,7 @@ import { BioSection, BioYear } from '../components/bio'
 import {
 	IoLogoGithub
 } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
+//import thumbYouTube from '../public/images/links/youtube.png'
 const Page = () => {
 	return (
 		<Layout>
