@@ -8,7 +8,7 @@ import {
 	Link,
 	List,
 	ListItem,
-	SimpleGrid,
+	{/* SimpleGrid, */}
 	Icon,
 	useColorModeValue 
 } from '@chakra-ui/react'
