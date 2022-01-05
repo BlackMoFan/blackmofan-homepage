@@ -107,9 +107,9 @@ const Page = () => {
 						</ListItem>
 					</List>
 
-					<SimpleGrid columns={[1,2,2]} gap={6}>
+					{/* <SimpleGrid columns={[1,2,2]} gap={6}>
 						<GridItem href="https://www.youtube.com/devaslife" title="Dev as Life" thumbnail={thumbYouTube}>I got this tut from this YouTube channel</GridItem>
-					</SimpleGrid>
+					</SimpleGrid> */}
 				</Section>
 			</Container>
 		</Layout>
