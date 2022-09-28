@@ -89,7 +89,7 @@ const Page = () => {
 						I 🤍
 					</Heading>
 					<Paragraph>
-						My Family, My dogs, Life in general, Space, Reading, Enough resting time
+						My Family, My dogs, Luisa Jane Filasol Caguioa, Life in general, Space, Reading, Enough resting time
 					</Paragraph>
 				</Section>
 
