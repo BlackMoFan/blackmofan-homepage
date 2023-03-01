@@ -6,33 +6,38 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
 	return (
-		<Layout title="Mark List">
+		<Layout title="Hiraya">
 			<Container>
 				<Title>
-					Mark List <Badge>2020</Badge>
+					Hiraya <Badge>2021</Badge>
 				</Title>
 				<P>
-					A Student Registration and Mark List System Console Application with Password Support
+					An Art Exhibition Page for Our Subject, Software Engineering I
 				</P>
 				<List ml={4} my={4}>
 					<ListItem>
 						<Meta>Repository</Meta>
-						<Link href='https://github.com/BlackMoFan/MiniProjects-Cpp/blob/main/Student%20Registration%20and%20Mark%20List%20System%20-%20Project%20in%20First%20Year%20College.cpp'>
+						<Link href='https://github.com/BlackMoFan/artAppreciationLandingPage'>
 							Github <ExternalLinkIcon mx="2px" />
 						</Link>
 					</ListItem>
 					<ListItem>
+						<Meta>Website</Meta>
+						<Link href='https://art-appreciation.vercel.app/'>
+							Vercel <ExternalLinkIcon mx="2px" />
+						</Link>
+					</ListItem>
+					<ListItem>
 						<Meta>Platform</Meta>
-						<span>Windows</span>
+						<span>Web Application</span>
 					</ListItem>
 					<ListItem>
 						<Meta>Stack</Meta>
-						<span>C++, Windows CLI</span>
+						<span>HTML, CSS, Javascript, MySQL, PHP</span>
 					</ListItem>
 				</List>
 				
-				{/* <WorkImage src="/images/works/studentRegistration.png" alt="Mark List" /> */}
-				<WorkImage src="/images/works/studentRegistration.PNG" alt="Mark List" />
+				<WorkImage src="/images/works/hiraya.png" alt="EMS" />
 			</Container>
 		</Layout>
 	)

@@ -6,33 +6,38 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
 	return (
-		<Layout title="Mark List">
+		<Layout title="Personal Linktree-like Site">
 			<Container>
 				<Title>
-					Mark List <Badge>2020</Badge>
+					Personal Linktree-like Site <Badge>2022</Badge>
 				</Title>
 				<P>
-					A Student Registration and Mark List System Console Application with Password Support
+					Compilation of all my social media accounts
 				</P>
 				<List ml={4} my={4}>
 					<ListItem>
 						<Meta>Repository</Meta>
-						<Link href='https://github.com/BlackMoFan/MiniProjects-Cpp/blob/main/Student%20Registration%20and%20Mark%20List%20System%20-%20Project%20in%20First%20Year%20College.cpp'>
+						<Link href='https://github.com/BlackMoFan/one-stop-link-sharing'>
 							Github <ExternalLinkIcon mx="2px" />
 						</Link>
 					</ListItem>
 					<ListItem>
+						<Meta>Website</Meta>
+						<Link href='https://blackmofan-links.vercel.app/'>
+							Vercel <ExternalLinkIcon mx="2px" />
+						</Link>
+					</ListItem>
+					<ListItem>
 						<Meta>Platform</Meta>
-						<span>Windows</span>
+						<span>Web Application</span>
 					</ListItem>
 					<ListItem>
 						<Meta>Stack</Meta>
-						<span>C++, Windows CLI</span>
+						<span>HTML, CSS, Javascript, Vanta.js</span>
 					</ListItem>
 				</List>
 				
-				{/* <WorkImage src="/images/works/studentRegistration.png" alt="Mark List" /> */}
-				<WorkImage src="/images/works/studentRegistration.PNG" alt="Mark List" />
+				<WorkImage src="/images/works/one-stop-link-sharing.png" alt="EMS" />
 			</Container>
 		</Layout>
 	)

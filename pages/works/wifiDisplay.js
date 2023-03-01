@@ -12,18 +12,18 @@ const Work = () => {
 					WiFi Details Display <Badge>2021</Badge>
 				</Title>
 				<P>
-					Simple Console Application for Win X Users to Display Information with Security Key for Once-Connected WiFi Networks
+					Simple Console Application for Win X and Linux Users to Display Information with Security Key for Once-Connected WiFi Networks
 				</P>
 				<List ml={4} my={4}>
 					<ListItem>
-						<Meta>Website</Meta>
-						<Link href='https://github.com/BlackMoFan/MiniProjects-Cpp/blob/main/SimpleWiFiPasswordDisplay.cpp'>
-							https://github.com/BlackMoFan/MiniProjects-Cpp/blob/main/SimpleWiFiPasswordDisplay.cpp <ExternalLinkIcon mx="2px" />
+						<Meta>Repository</Meta>
+						<Link href='https://github.com/BlackMoFan/MiniProjects-Cpp/blob/main/WindowsAndUbuntuLinuxWiFiPasswordDisplay.cpp'>
+							Github <ExternalLinkIcon mx="2px" />
 						</Link>
 					</ListItem>
 					<ListItem>
 						<Meta>Platform</Meta>
-						<span>Windows</span>
+						<span>Windows, Linux</span>
 					</ListItem>
 					<ListItem>
 						<Meta>Stack</Meta>
@@ -31,7 +31,7 @@ const Work = () => {
 					</ListItem>
 				</List>
 				
-				<WorkImage src="/images/works/cmdIcon.png" alt="WiFi Display" />
+				{/* <WorkImage src="/images/works/cmdIcon.png" alt="WiFi Display" /> */}
 				<WorkImage src="/images/works/wifiDisplay.png" alt="WiFi Display" />
 			</Container>
 		</Layout>
