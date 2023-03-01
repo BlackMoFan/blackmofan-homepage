@@ -12,7 +12,7 @@ const Work = () => {
 					Dog Age Converter <Badge>2021</Badge>
 				</Title>
 				<P>
-					Converts Dog's Age in Years to Human Years
+					Converts Dog&apos;s Age in Years to Human Years
 				</P>
 				<List ml={4} my={4}>
 					<ListItem>
