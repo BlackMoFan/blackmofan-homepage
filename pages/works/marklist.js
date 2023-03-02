@@ -32,7 +32,7 @@ const Work = () => {
 				</List>
 				
 				{/* <WorkImage src="/images/works/studentRegistration.png" alt="Mark List" /> */}
-				<WorkImage src="/images/works/studentRegistration.PNG" alt="Mark List" />
+				<WorkImage src="/images/works/studentRegistration.png" alt="Mark List" />
 			</Container>
 		</Layout>
 	)
