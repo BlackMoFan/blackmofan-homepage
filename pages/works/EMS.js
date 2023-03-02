@@ -24,7 +24,7 @@ const Work = () => {
 					<ListItem>
 						<Meta>Website</Meta>
 						<Link href='http://dishevelled-title.000webhostapp.com/utilities/login.php'>
-							Vercel <ExternalLinkIcon mx="2px" />
+							Webhostapp <ExternalLinkIcon mx="2px" />
 						</Link>
 					</ListItem>
 					<ListItem>
