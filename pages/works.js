@@ -7,10 +7,15 @@ import Layout from '../components/layouts/article'
 import thumbMarkList from '../public/images/works/origami.jpg'
 // import thumbWifiDisplay from '../public/images/works/cmdIcon.png'
 import thumbWifiDisplay from '../public/images/works/judah.jpg'
-import employeeIcon from '../public/images/works/console.jpg'
+import EMS from '../public/images/works/thumbnail/ScriptKiddies.png'
+import RottenOrange from '../public/images/works/thumbnail/RottenOrange.png'
 import artAppreciation from '../public/images/works/into-the-light.jpg'
 import dogAge from '../public/images/works/coffee.jpg'
 import personallink from '../public/images/works/retrocam.jpg'
+import PIS from '../public/images/works/thumbnail/PIS.png'
+import USC from '../public/images/works/thumbnail/USC.png'
+import PRG from '../public/images/works/thumbnail/PRG.png'
+import URBANITY from '../public/images/works/thumbnail/URBANITY.png'
 
 
 const Works = () => {
@@ -33,8 +38,33 @@ const Works = () => {
 						</WorkGridItem>
 					</Section>
 					<Section>
-						<WorkGridItem id="EMS" title="Employee Management System" thumbnail={employeeIcon}>
+						<WorkGridItem id="EMS" title="Employee Management System" thumbnail={EMS}>
 							An Employee Management System for Our Subject, Software Engineering I
+						</WorkGridItem>
+					</Section>
+					<Section>
+						<WorkGridItem id="PIS" title="Poison Information Service" thumbnail={PIS}>
+							A website application where patients can report their poisoning cases to be referred to the nearest hospital with available antidote
+						</WorkGridItem>
+					</Section>
+					<Section>
+						<WorkGridItem id="RottenOrange" title="Rotten Orange" thumbnail={RottenOrange}>
+						 	All-in-one Software-as-a-Service (SaaS) for hotel and lodging businesses
+						</WorkGridItem>
+					</Section>
+					<Section>
+						<WorkGridItem id="USC" title="WVSU USC" thumbnail={USC}>
+							One-stop goto for everything related to the WVSU University Student Council
+						</WorkGridItem>
+					</Section>
+					<Section>
+						<WorkGridItem id="PRG" title="PRG 2023" thumbnail={PRG}>
+							Official website for PRG 2023 Visayas Leg with updated unofficial scores from each sport. Updated by designated, on-site personnel from West Visayas State University. 
+						</WorkGridItem>
+					</Section>
+					<Section>
+						<WorkGridItem id="URBANITY" title="URBANITY" thumbnail={URBANITY}>
+							Content management system for tenancy and financial transparency for Parc Regency Residences - G
 						</WorkGridItem>
 					</Section>
 					<Section>
