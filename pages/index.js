@@ -27,14 +27,14 @@ const Page = () => {
 		<Layout>
 			<Container>
 				<Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-					Hello, I&apos;m a Computer Science student in the Philippines!
+					Hello, I&apos;m a Computer Science graduate based in the Philippines!
 				</Box>
 				<Box display={{md:'flex'}}>
 					<Box flexGrow={1}>
 						<Heading as="h2" variant="page-title">
 							Black Mo Fan
 						</Heading>
-						<p>DOST-SEI and DOST-SPARTA Scholar | Aspiring Geneticist and Inventor</p>
+						<p>DOST-SEI and DOST-SPARTA Scholar | Stoic</p>
 					</Box>
 					<Box 
 						flexShrink={0} 
@@ -49,9 +49,9 @@ const Page = () => {
 					<Heading as="h3" variant="section-title">
 						Work
 					</Heading>
-					<Paragraph>Black Mo Fan does not have a job yet since
-						he is still learning his dev stack.  He is committed
-						and driven with the purpose of bettering life. When not online, he loves hanging out with his family and dogs. Currently, he is learning about React and Next JS.
+					<Paragraph>Black Mo Fan is currently a freelancer software engineer and
+						founder of a sole proprietorship company, RottenData Labs.  He is committed
+						and driven with the purpose of bettering life. When not online, he loves hanging out with his family and dogs. Currently, he is learning about SWE and business analytics.
 					</Paragraph>
 					<Box align="center" my={4}>
 						<NextLink href="/works">
@@ -72,15 +72,15 @@ const Page = () => {
 					</BioSection>
 					<BioSection>
 						<BioYear>2020</BioYear>
-						Graduated Secondary School in Antique National School
+						Graduated Secondary School in Antique National School with Honors
 					</BioSection>
 					<BioSection>
 						<BioYear>2020</BioYear>
-						Passed the DOST-SEI Scholarship Exam and Became a DOST Scholar Batch 2020
+						Passed the DOST-SEI Scholarship Exam and Became a DOST Scholar of Batch 2020
 					</BioSection>
 					<BioSection>
-						<BioYear>2020 to present</BioYear>
-						Took B.S. in Computer Science at West Visayas State University
+						<BioYear>2020 to 2024</BioYear>
+						Graduated Magna Cum Laude with BS in Computer Science at West Visayas State University
 					</BioSection>
 				</Section>
 
@@ -89,7 +89,7 @@ const Page = () => {
 						I 🤍
 					</Heading>
 					<Paragraph>
-						My Family, My dogs, Life in general, Space, Reading, Enough resting time
+						My family, dogs, life in general, reading, and enough resting time
 					</Paragraph>
 				</Section>
 
