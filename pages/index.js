@@ -49,7 +49,7 @@ const Page = () => {
 					<Heading as="h3" variant="section-title">
 						Work
 					</Heading>
-					<Paragraph>Black Mo Fan is currently a freelancer software engineer and
+					<Paragraph>Black Mo Fan is currently a freelance software engineer and
 						founder of a sole proprietorship company, RottenData Labs.  He is committed
 						and driven with the purpose of bettering life. When not online, he loves hanging out with his family and dogs. Currently, he is learning about SWE and business analytics.
 					</Paragraph>
