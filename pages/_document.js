@@ -6,7 +6,10 @@ export default class Document extends NextDocument {
 	render () {
 		return(
 			<Html lang="en">
-			<Head />
+			<Head>
+				{/* Add the favicon link here */}
+				<link rel="icon" href="/images/logo.webp" />
+			</Head>
 			<body>
 			<ColorModeScript initialColorMode = {theme.config.initialColorMode} />
 			<Main />

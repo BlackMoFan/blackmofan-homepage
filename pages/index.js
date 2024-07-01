@@ -12,7 +12,7 @@ import {
 	Icon,
 	useColorModeValue 
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, DownloadIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -27,14 +27,15 @@ const Page = () => {
 		<Layout>
 			<Container>
 				<Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-					Hello, I&apos;m a Computer Science graduate based in the Philippines!
+					{/* Hello, I&apos;m a Full-Stack Developer based in the Philippines! */}
+					Crafting digital experiences from the Philippines.
 				</Box>
 				<Box display={{md:'flex'}}>
-					<Box flexGrow={1}>
+					<Box flexGrow={3}>
 						<Heading as="h2" variant="page-title">
-							Black Mo Fan
+							Rod Lester A. Moreno
 						</Heading>
-						<p>DOST-SEI and DOST-SPARTA Scholar | Stoic</p>
+						<p>Black Mo Fan | SWE | Stoic</p>
 					</Box>
 					<Box 
 						flexShrink={0} 
@@ -53,12 +54,17 @@ const Page = () => {
 						founder of a sole proprietorship company, RottenData Labs.  He is committed
 						and driven with the purpose of bettering life. When not online, he loves hanging out with his family and dogs. Currently, he is learning about SWE and business analytics.
 					</Paragraph>
-					<Box align="center" my={4}>
+					<Box align="center" my={4} display="grid" gridGap={2} gridAutoFlow="column dense" justifyContent="center">
 						<NextLink href="/works">
 							<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
 								My Portfolio
 							</Button>
 						</NextLink>
+						<a href="/files/CV.pdf" download>
+							<Button rightIcon={<DownloadIcon />} colorScheme="teal">
+								Download My CV
+							</Button>
+						</a>
 					</Box>
 				</Section>
 
@@ -89,7 +95,7 @@ const Page = () => {
 						I 🤍
 					</Heading>
 					<Paragraph>
-						My family, Johanna, dogs, life in general, reading, and enough resting time
+						My family, dogs, life in general, reading, and enough resting time
 					</Paragraph>
 				</Section>
 

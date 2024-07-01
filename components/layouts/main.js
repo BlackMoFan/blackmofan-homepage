@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Navbar from '../navbar.js'
 import NoSsr from '../no-ssr'
 import { Box, Container } from '@chakra-ui/react'
-import VoxelDuck from '../voxel-dog'
+import VoxelDog from '../voxel-dog'
 
 const Main = ({children, router}) => {
 	return (
@@ -16,7 +16,7 @@ const Main = ({children, router}) => {
 
 			<Container maxW="container.md" pt={14}>
 				<NoSsr>
-					<VoxelDuck />
+					<VoxelDog />
 				</NoSsr>
 				{children}
 			</Container>
