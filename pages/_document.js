@@ -7,6 +7,12 @@ export default class Document extends NextDocument {
 		return(
 			<Html lang="en">
 			<Head>
+				<title>Rod Lester A. Moreno - Portfolio</title>
+				<meta name="description" content="Rod Moreno's website portfolio showcasing his projects in software development" />
+				<meta name="keywords" content="rod, rod lester, rod moreno, rod lester moreno, blackmofan" />
+				<meta property="og:title" content="Rod Lester A. Moreno - Portfolio" />
+				<meta property="og:description" content="Rod Moreno's website portfolio showcasing his projects in software development" />
+				<meta property="og:image" content="https://blackmofan.vercel.app/images/blackmofan.jpg" />
 				{/* Add the favicon link here */}
 				<link rel="icon" href="/images/logo.webp" />
 			</Head>
