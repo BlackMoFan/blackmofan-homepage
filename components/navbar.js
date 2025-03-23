@@ -73,6 +73,9 @@ const Navbar = props => {
 		<NextLink href="https://blackmofan.hashnode.dev" passHref>
 		Posts
 		</NextLink>
+		<LinkItem href="/contact" path={path}>
+		Hire Me
+		</LinkItem>
 		</Stack>
 
 		<Box flex={1} align="right">
@@ -87,13 +90,16 @@ const Navbar = props => {
 					/>		
 					<MenuList>
 						<NextLink href="/" passHref>
-							<MenuItem as={Link}>About</MenuItem>
+							<MenuItem as={Link}>Home</MenuItem>
 						</NextLink>
 						<NextLink href="/works" passHref>
 							<MenuItem as={Link}>Works</MenuItem>
 						</NextLink>
 						<NextLink href="https://blackmofan.hashnode.dev" passHref>
 							<MenuItem as={Link}>Posts</MenuItem>
+						</NextLink>
+						<NextLink href="/contact" passHref>
+							<MenuItem as={Link}>Hire Me</MenuItem>
 						</NextLink>
 							{/* <MenuItem as={Link} href="https://blackmofan.github.io"> View Another Portfolio </MenuItem> */}
 					</MenuList>
