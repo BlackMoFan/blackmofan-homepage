@@ -36,33 +36,56 @@
 // app.listen(port, () => {
 //   console.log(`Server running at http://localhost:${port}`);
 // });
-// filepath: c:\Users\blackmofan\Desktop\work\Portfolio Website\blackmofan-homepage\api\send-email.js
-const { Resend } = require('resend');
 
-const resend = new Resend('re_3FQj7ZND_FuH2cLAkExtnE7zPUmkTgWkm');
 
-module.exports = async (req, res) => {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method not allowed' });
-  }
+// // filepath: c:\Users\blackmofan\Desktop\work\Portfolio Website\blackmofan-homepage\api\send-email.js
+// const { Resend } = require('resend');
 
-  const { name, email, intent, message } = req.body;
+// const resend = new Resend('re_3FQj7ZND_FuH2cLAkExtnE7zPUmkTgWkm');
 
-  try {
-    await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'rodlester.moreno23@gmail.com',
-      subject: `New message from ${name}`,
-      html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Intent:</strong> ${intent}</p>
-        <p><strong>Message:</strong> ${message}</p>
-      `,
-    });
-    res.status(200).json({ message: 'Email sent successfully' });
-  } catch (error) {
-    console.error('Error sending email:', error);
-    res.status(500).json({ message: 'Error sending email' });
-  }
-};
+// module.exports = async (req, res) => {
+//   if (req.method !== 'POST') {
+//     return res.status(405).json({ message: 'Method not allowed' });
+//   }
+
+//   const { name, email, intent, message } = req.body;
+
+//   try {
+//     await resend.emails.send({
+//       from: 'onboarding@resend.dev',
+//       to: 'rodlester.moreno23@gmail.com',
+//       subject: `New message from ${name}`,
+//       html: `
+//         <p><strong>Name:</strong> ${name}</p>
+//         <p><strong>Email:</strong> ${email}</p>
+//         <p><strong>Intent:</strong> ${intent}</p>
+//         <p><strong>Message:</strong> ${message}</p>
+//       `,
+//     });
+//     res.status(200).json({ message: 'Email sent successfully' });
+//   } catch (error) {
+//     console.error('Error sending email:', error);
+//     res.status(500).json({ message: 'Error sending email' });
+//   }
+// };
+
+import { Resend } from 'resend'
+import dotenv from 'dotenv'
+
+dotenv.config()
+
+const resend = new Resend('re_3FQj7ZND_FuH2cLAkExtnE7zPUmkTgWkm')
+
+export const sendEmail = async (data) => {
+  await resend.emails.send({
+    from: 'onboarding@resend.dev',
+    to: 'rodlester.moreno23@gmail.com',
+    subject: `New message from ${data.name}`,
+    html: `
+      <p><strong>Name:</strong> ${data.name}</p>
+      <p><strong>Email:</strong> ${data.email}</p>
+      <p><strong>Intent:</strong> ${data.intent}</p>
+      <p><strong>Message:</strong> ${data.message}</p>
+    `,
+  })
+}

@@ -1,59 +1,46 @@
-// filepath: c:\Users\blackmofan\Desktop\work\Portfolio Website\blackmofan-homepage\pages\contact.js
-import { Container, Heading, FormControl, FormLabel, Input, Textarea, Button, Checkbox, Stack, useToast } from '@chakra-ui/react'
+import { Container, Heading, FormControl, FormLabel, Input, Textarea, Button, Checkbox, Stack, useToast, useColorModeValue } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import { useState } from 'react'
-import { useColorModeValue } from '@chakra-ui/react'
+import { sendEmail } from '../api/send-email'
 
 const Contact = () => {
-    const toast = useToast()
-    const [isSubmitting, setIsSubmitting] = useState(false)
+	const toast = useToast()
+	const [isSubmitting, setIsSubmitting] = useState(false)
 	const formBackground = useColorModeValue('white', 'gray.700')
 	const inputBorderColor = useColorModeValue('gray.300', 'gray.600')
 	const checkboxColorScheme = useColorModeValue('teal', 'teal')
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-        setIsSubmitting(true)
+	const handleSubmit = async (event) => {
+		event.preventDefault()
+		setIsSubmitting(true)
 
-        const formData = new FormData(event.target)
-        const data = Object.fromEntries(formData.entries())
+		const formData = new FormData(event.target)
+		const data = Object.fromEntries(formData.entries())
 
-        try {
-            const response = await fetch('/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
-            });
+		try {
+			await sendEmail(data)
+			toast({
+				title: 'Message sent.',
+				description: 'Your message has been sent successfully!',
+				status: 'success',
+				duration: 5000,
+				isClosable: true,
+			})
+		} catch (error) {
+			toast({
+				title: 'An error occurred.',
+				description: 'Unable to send your message. Please try again later.',
+				status: 'error',
+				duration: 5000,
+				isClosable: true,
+			})
+		} finally {
+			setIsSubmitting(false)
+		}
+	}
 
-            if (response.ok) {
-                toast({
-                    title: 'Message sent.',
-                    description: 'Your message has been sent successfully!',
-                    status: 'success',
-                    duration: 5000,
-                    isClosable: true,
-                });
-            } else {
-                throw new Error('Error sending email');
-            }
-        } catch (error) {
-            console.error('Error sending email:', error);
-            toast({
-                title: 'An error occurred.',
-                description: 'Unable to send your message. Please try again later.',
-                status: 'error',
-                duration: 5000,
-                isClosable: true,
-            });
-        } finally {
-            setIsSubmitting(false);
-        }
-    }
-
-    return (
-        <Layout>
+	return (
+		<Layout>
 			<Container bg={formBackground} p={6} borderRadius="md" boxShadow="md">
 				<Heading as="h3" fontSize={20} mb={4}>
 					Contact Me
@@ -86,7 +73,7 @@ const Contact = () => {
 				</form>
 			</Container>
 		</Layout>
-    )
+	)
 }
 
 export default Contact
