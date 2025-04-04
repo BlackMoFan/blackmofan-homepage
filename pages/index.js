@@ -19,7 +19,8 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 //import { GridItem } from '../components/grid-item'
 import {
-	IoLogoGithub
+	IoLogoGithub,
+	IoLogoLinkedin
 } from 'react-icons/io5'
 //import thumbYouTube from '../public/images/links/youtube.png'
 const Page = () => {
@@ -107,7 +108,12 @@ const Page = () => {
 						<ListItem>
 							<Link href="https://github.com/blackmofan" target="_blank">
 								<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>
-									@blackmofan
+									blackmofan
+								</Button>
+							</Link>
+							<Link href="https://www.linkedin.com/in/rolem" target="_blank">
+								<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />}>
+									Rod Lester A. Moreno
 								</Button>
 							</Link>
 						</ListItem>
