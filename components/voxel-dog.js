@@ -75,7 +75,7 @@ const VoxelDog = () => {
 			setControls(controls)
 
 			// from https://www.cgtrader.com/items/2752667/download-page
-			loadGLTFModel(scene, '/Katana.glb', {
+			loadGLTFModel(scene, '/rottendatalabs.glb', {
 				receiveShadow: false,
 				castShadow: false
 			}).then(() => {
