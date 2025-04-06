@@ -12,7 +12,7 @@ const Work = () => {
 					BigCommerce Website<Badge>2024</Badge>
 				</Title>
 				<P>
-					Maintained and developed a BigCommerce website for N-Essentials, an Australian company that sells essential oils and other related products. I also implemented SEO strategies to improve the website's visibility on search engines.
+					Maintained and developed a BigCommerce website for N-Essentials, an Australian company that sells essential oils and other related products. I also implemented SEO strategies to improve the website&apos;s visibility on search engines.
 				</P>
 				<List ml={4} my={4}>
 					{/* <ListItem>
