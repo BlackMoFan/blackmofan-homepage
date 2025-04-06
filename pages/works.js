@@ -3,6 +3,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
+import NESSENTIALS from '../public/images/works/thumbnail/nessentials.png'
 import EMS from '../public/images/works/thumbnail/employee.png'
 import RottenOrange from '../public/images/works/thumbnail/rotten.png'
 import artAppreciation from '../public/images/works/thumbnail/artgallery.png'
@@ -33,6 +34,11 @@ const Works = () => {
 							Simple Console Application for Win X and Linux Users to Display WiFi Information
 						</WorkGridItem>
 					</Section> */}
+					<Section>
+						<WorkGridItem id="nessentials" title="N-Essentials" thumbnail={NESSENTIALS}>
+							A BigCommerce website for N-Essentials, a company that sells essential oils and other related products.
+						</WorkGridItem>
+					</Section>
 					<Section>
 						<WorkGridItem id="EMS" title="Employee Management System" thumbnail={EMS}>
 							A website application for managing employees efficiently
