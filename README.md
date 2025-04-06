@@ -1,13 +1,5 @@
 # BlackMoFan's Homepage
 
-[Live Website](https://blackmofan-nextjs.vercel.app/)
-
-## Tutorial
-
-This is the tut I watched and followed to build this website:
-[https://www.youtube.com/watch?v=bSMZgXzC9AA](https://www.youtube.com/watch?v=bSMZgXzC9AA)
-[![YouTube thumbnail](codedTerm.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
-
 ## Stack
 
 - [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
@@ -21,6 +13,8 @@ This is the tut I watched and followed to build this website:
 $PROJECT_ROOT
 │   # Page files
 ├── pages
+│       # Custom API
+├────── api
 │   # React component files
 ├── components
 │   # Non-react modules

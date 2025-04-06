@@ -24,7 +24,7 @@ const Work = () => {
 					<ListItem>
 						<Meta>Website</Meta>
 						<Link href='https://n-essentials.com.au'>
-							Vercel <ExternalLinkIcon mx="2px" />
+							N-Essentials <ExternalLinkIcon mx="2px" />
 						</Link>
 					</ListItem>
 					<ListItem>
