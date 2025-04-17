@@ -36,7 +36,7 @@ const Page = () => {
 						<Heading as="h2" variant="page-title">
 							Rod Lester A. Moreno
 						</Heading>
-						<p>Black Mo Fan | SWE | Stoic</p>
+						<p>blackmofan | SWE | Stoic</p>
 					</Box>
 					<Box 
 						flexShrink={0} 
@@ -51,7 +51,7 @@ const Page = () => {
 					<Heading as="h3" variant="section-title">
 						Work
 					</Heading>
-					<Paragraph>Black Mo Fan is currently a freelance software engineer and
+					<Paragraph>Rod is currently a freelance software engineer and
 						founder of a sole proprietorship company, RottenData Labs.  He is committed
 						and driven with the purpose of bettering life. When not online, he loves hanging out with his family and dogs. Currently, he is learning about SWE and business analytics.
 					</Paragraph>
