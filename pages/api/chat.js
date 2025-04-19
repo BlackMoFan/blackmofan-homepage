@@ -175,6 +175,12 @@ export default async function handler(req, res) {
             // console.log("Gemini API Reply:", reply);
 		} catch (error) {
 			console.error("Gemini API Error:", error);
+
+             // ✅ Catch quota-related errors
+            if (error.message.includes("quota")) {
+                return res.status(429).json({ reply: "Free quota exceeded. Please try again later." });
+            }
+            
 			res.status(500).json({ reply: "Error contacting Gemini." });
 		}
     } catch (error) {
