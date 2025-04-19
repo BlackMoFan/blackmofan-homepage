@@ -142,7 +142,9 @@ export default async function handler(req, res) {
                 "Artificial Intelligence",
                 "Robotics"
             ],
-            girlfriend: "Johanna Jean"
+            girlfriend: "Johanna Jean",
+            wife: "Mommy Johanna Jean",
+            children: "Johan and Lavender"
         };
 
 
