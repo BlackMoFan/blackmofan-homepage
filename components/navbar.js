@@ -73,7 +73,7 @@ const Navbar = (props) => {
 						Works
 					</LinkItem>
 					<NextLink href="https://blackmofan.hashnode.dev" passHref>
-						<Link>Posts</Link>
+						Posts
 					</NextLink>
 					<LinkItem href="/contact" path={path}>
 						Hire Me
