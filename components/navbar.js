@@ -14,18 +14,8 @@ import {
 	IconButton,
 	useColorModeValue,
 	useDisclosure,
-	Modal,
-	ModalOverlay,
-	ModalContent,
-	ModalHeader,
-	ModalBody,
-	ModalCloseButton,
-	Input,
-	Button,
-	VStack,
-	Text,
 } from '@chakra-ui/react'
-import { HamburgerIcon, ChatIcon } from '@chakra-ui/icons'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 import ThemeToggleButton from './theme-toggle-button'
 import Chatbot from './chatbot';
