@@ -12,8 +12,7 @@ import {
 	MenuList,
 	MenuButton,
 	IconButton,
-	useColorModeValue,
-	useDisclosure,
+	useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
@@ -38,8 +37,6 @@ const LinkItem = ({ href, path, children }) => {
 
 const Navbar = (props) => {
 	const { path } = props
-	const [messages, setMessages] = useState([])
-	const [input, setInput] = useState("")
 
 	return (
 		<Box
