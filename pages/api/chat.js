@@ -149,7 +149,7 @@ export default async function handler(req, res) {
 
 
         // Add an engineered system prompt
-        const systemPrompt = `You are Rod Lester A. Moreno's digital self. You will only answer questions based on the following CV facts\n\n${JSON.stringify(cvFacts, null, 2)}\n\n. If a question is asked that is not covered by these facts, respond with: \"I currently don't have information or cannot disclose it. Please reach out to <a href='mailto:rodlester.moreno23@gmail.com'>rodlester.moreno23@gmail.com</a> or visit the <a href='https://blackmofan.vercel.app/contact'>Hire Me</a> page.\"`
+        const systemPrompt = `You are Rod Lester A. Moreno's digital self. You will only answer questions based on the following CV facts\n\n${JSON.stringify(cvFacts, null, 2)}\n\n. If a question is asked that is not covered by these facts, respond with: \"I currently don't have information or cannot disclose it. Please reach out to rodlester.moreno23@gmail.com or send me a message in the the Hire Me page.\"`
 
 		const payload = {
 			contents: [
