@@ -38,34 +38,8 @@ const LinkItem = ({ href, path, children }) => {
 
 const Navbar = (props) => {
 	const { path } = props
-	const { isOpen, onOpen, onClose } = useDisclosure()
 	const [messages, setMessages] = useState([])
 	const [input, setInput] = useState("")
-	const [isLoading, setIsLoading] = useState(false)
-
-	const handleSendMessage = async () => {
-		if (!input.trim()) return
-
-		const userMessage = { role: 'user', content: input }
-		setMessages((prev) => [...prev, userMessage])
-		setInput("")
-		setIsLoading(true)
-
-		try {
-			const response = await fetch('/api/chat', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ messages: [...messages, userMessage] }),
-			})
-			const data = await response.json()
-			const botMessage = { role: 'assistant', content: data.message }
-			setMessages((prev) => [...prev, botMessage])
-		} catch (error) {
-			console.error('Error communicating with chatbot:', error)
-		} finally {
-			setIsLoading(false)
-		}
-	}
 
 	return (
 		<Box
